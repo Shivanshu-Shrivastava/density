@@ -27,7 +27,7 @@ const HireME = () => {
       </a>
 
       <div className="user-bio">Email me ssshrivastava😉. cz</div>
-      <button type="button" className="btn my-2 btn-danger btn-rounded">Hire Me 😉</button>
+      <button type="button" className="btn my-2 btn-danger btn-rounded mb-5">Hire Me 😉</button>
 
      
     </div>

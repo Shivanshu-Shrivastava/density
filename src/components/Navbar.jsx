@@ -1,5 +1,5 @@
 import React from "react";
-import './../App.css'
+import "./../App.css";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-sm-2 p-md-5 shadow-0">
@@ -16,7 +16,10 @@ const Navbar = () => {
           <i className="fas fa-bars"></i>
         </button>
 
-        <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
           <a className="navbar-brand mt-2 mt-lg-0" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +66,23 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex">
-          <button type="button" class="btn btn-light mx-3 fw-bold" data-mdb-ripple-color="dark">Sign Up</button>
-          <button type="button" class="btn btn-light mx-3 fw-bold" data-mdb-ripple-color="dark">Login</button>
-          <button type="button" class="btn btn-dark">Hire Creatives</button>
-
+            <button
+              type="button"
+              class="btn btn-light mx-3 fw-bold"
+              data-mdb-ripple-color="dark"
+            >
+              Sign Up
+            </button>
+            <button
+              type="button"
+              class="btn btn-light mx-3 fw-bold"
+              data-mdb-ripple-color="dark"
+            >
+              Login
+            </button>
+            <button type="button" class="btn btn-dark">
+              Hire Creatives
+            </button>
           </div>
         </div>
       </div>
