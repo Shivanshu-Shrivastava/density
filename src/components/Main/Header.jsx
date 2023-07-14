@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
+import Text from "./Text";
+import Image from "./Image";
 const Header = () => {
   return (
     <div className="container relative">
@@ -31,12 +33,21 @@ const Header = () => {
           >
             <i className="fab fa-instagram"></i>
           </a>
-          
         </div>
       </div>
-      <div style={{backgroundColor:'#e1dbfd'}} className="card m-4 rounded p-sm-3 p-md-5">
+      <div
+        style={{ backgroundColor: "#e1dbfd" }}
+        className="card m-4 rounded p-sm-3 p-md-5"
+      >
         <Carousel />
-
+      </div>
+      <div className="px-sm-5 py-sm-3 p-0">
+        <Text />
+      </div>
+      <Image />
+      <div className="card p-3 px-sm-4 py-sm-5">
+        <h3 className="fw-bold text-black "> Does this Sound familiar...</h3>
+        
       </div>
     </div>
   );
