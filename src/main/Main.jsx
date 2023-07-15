@@ -15,7 +15,7 @@ const Main = () => {
     <main className="position-relative">
       {/* View of User and it's name */}
       <div className="container ">
-        <div className="px-5 d-flex justify-content-between align-items-center w-100 flex-wrap">
+        <div className="px-0 px-sm-5 mt-3 mt-sm-0 d-flex justify-content-between align-items-center w-100 flex-wrap">
           <div data-aos="flip-up" className="d-flex align-items-center  ">
             <img
               className="rounded-circle"
