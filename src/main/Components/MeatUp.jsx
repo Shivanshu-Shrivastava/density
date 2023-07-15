@@ -3,6 +3,7 @@ import React from "react";
 const MeatUp = () => {
   return (
     <div
+      data-aos="zoom-out-up"
       className="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
       style={{
         backgroundImage:

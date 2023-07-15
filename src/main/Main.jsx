@@ -1,21 +1,22 @@
-// THIS IS MAIN FILE, EVERY COMPONENTS START FROM HERE
+// THIS IS MAIN FILE, EVERY COMPONENTS JOURNEY START FROM HERE
 
 import React from "react";
-import Carousel from "./Carousel";
-import Text from "./Text";
-import Image from "./Image";
-import Card from "./Card";
-import MeatUp from "./MeatUp";
-import Wondered from "./Wondered";
-import HireME from "./HireME";
-import Footer from "./Footer";
-const Header = () => {
+import Carousel from "./Components/Carousel";
+import Text from "./Components/Text";
+import Image from "./Components/Image";
+import Card from "./Components/Card";
+import MeatUp from "./Components/MeatUp";
+import Wondered from "./Components/Wondered";
+import HireME from "./Components/HireME";
+import Footer from "./Components/Footer";
+import SideView from "./Components/SideView";
+const Main = () => {
   return (
-    <>
+    <main className="position-relative">
       {/* View of User and it's name */}
-      <div className="container relative">
+      <div className="container ">
         <div className="px-5 d-flex justify-content-between align-items-center w-100 flex-wrap">
-          <div className="d-flex align-items-center  ">
+          <div data-aos="flip-up" className="d-flex align-items-center  ">
             <img
               className="rounded-circle"
               src="https://cdn.dribbble.com/users/1998175/avatars/small/af46ac7b92eb85f76f5a3fe4f214fdf2.jpg?1542363868"
@@ -32,7 +33,7 @@ const Header = () => {
               </p>
             </div>
           </div>
-          <div className="icons d-flex mt-2 mt-sm-0">
+          <div data-aos="flip-up" className="icons d-flex mt-2 mt-sm-0">
             <a
               className="butn d-flex align-items-center text-dark text-center my-auto mx-0 mx-sm-2"
               href="#!"
@@ -59,7 +60,7 @@ const Header = () => {
         </div>
 
         {/* Text like :- Hey all,I've decided to make a redesign and animation for the Ahead app.  */}
-        <div className="px-sm-5 py-sm-3 p-0">
+        <div data-aos="fade-left" className="px-sm-5 py-sm-3 p-0">
           <Text />
         </div>
 
@@ -80,7 +81,12 @@ const Header = () => {
               title={"You argue with a colleague"}
               tr="0"
             />
-            <Card bgcolor={"darkkhaki"} title={"You attend a class"} tr="15" />
+            <Card
+              bgcolor={"darkkhaki"}
+              title={"You attend a class"}
+              tr="15"
+              data-aos="zoom-in-right"
+            />
             <Card bgcolor={"thistle"} title={"You failed in exam"} tr="0" />
           </div>
         </div>
@@ -106,13 +112,16 @@ const Header = () => {
 
         {/* User section for Hiring */}
         <HireME />
+
+        {/* Side View */}
+        <SideView />
       </div>
 
-        {/* End Footer */}
+      {/* End Footer */}
       <Footer />
-    </>
+    </main>
   );
 };
 // Thanks
 
-export default Header;
+export default Main;

@@ -3,6 +3,7 @@ import React from "react";
 const Image = () => {
   return (
     <div
+      data-aos="flip-up"
       class="bg-image d-flex justify-content-center align-items-center"
       style={{backgroundImage:"url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp')",height:40+'vh'}}
     >

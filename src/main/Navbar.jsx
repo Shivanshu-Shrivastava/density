@@ -1,40 +1,29 @@
 import React from "react";
-
-const Footer = () => {
+import "./../App.css";
+const Navbar = () => {
   return (
-    <footer className="text-center text-lg-start text-muted p-sm-5 p-2" style={{backgroundColor:'#ffc0cb96'}} >
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <div>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-google"></i>
-          </a>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="" className="me-4 link-secondary">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
+    <nav
+      data-aos="fade-down"
+      className="navbar navbar-expand-lg navbar-light bg-light p-sm-2 p-md-5 shadow-0"
+    >
+      <div className="container-fluid">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i className="fas fa-bars"></i>
+        </button>
 
-      <section className="">
-        <div className="container text-center text-md-start mt-5">
-          <div className="row mt-3">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
-                <a className="navbar-brand mt-2 mt-lg-0" href="#">
+        <div
+          className="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <a className="navbar-brand mt-2 mt-lg-0" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="76"
@@ -52,88 +41,56 @@ const Footer = () => {
               ></path>
             </svg>
           </a>
-              </h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae iste non a hic atque officia sequi possimus explicabo mollitia perspiciatis.
-              </p>
-            </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
-              </p>
-            </div>
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
-                </a>
-              </p>
-            </div>
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <i className="fas fa-home me-3 text-secondary"></i> New York, NY
-                10012, US
-              </p>
-              <p>
-                <i className="fas fa-envelope me-3 text-secondary"></i>
-                info@example.com
-              </p>
-              <p>
-                <i className="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88
-              </p>
-              <p>
-                <i className="fas fa-print me-3 text-secondary"></i> + 01 234 567 89
-              </p>
-            </div>
+          <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link text-dark " href="#">
+                Find Talent
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark " href="#">
+                For Designers
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark " href="#">
+                Inspiration
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark " href="#">
+                Learn Design
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-danger " href="#">
+                Go Pro
+              </a>
+            </li>
+          </ul>
+          <div className="d-flex">
+            <button
+              type="button"
+              class="btn btn-light mx-3 fw-bold"
+              data-mdb-ripple-color="dark"
+            >
+              Sign Up
+            </button>
+            <button
+              type="button"
+              class="btn btn-light mx-3 fw-bold"
+              data-mdb-ripple-color="dark"
+            >
+              Login
+            </button>
+            <button type="button" class="btn btn-dark">
+              Hire Creatives
+            </button>
           </div>
         </div>
-      </section>
-      <div
-        className="text-center p-4"
-        style={{backgroundColor:' rgba(0, 0, 0, 0.025)'}}
-      >
-        © 2023 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          Dribble.com
-        </a>
       </div>
-    </footer>
+    </nav>
   );
 };
 
-export default Footer;
+export default Navbar;
